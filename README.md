@@ -2,6 +2,12 @@
 
 Connects to a MySQL database and exports selected data to JSON.
 
+## Installation
+
+```
+$> pip3 install mysql-to-json
+```
+
 ## Usage
 ```
 mysql-to-json [-h] [-d DATABASE] [-H HOSTNAME] [-P PORT] [-u USER] [-p]
