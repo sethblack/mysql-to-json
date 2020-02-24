@@ -53,3 +53,11 @@ This explicitly sets every command line option available.
 ```
 $> mysql-to-json -h mydbserver.myhost.com -P 3306 -d mysql -u seth -p -e 'SELECT * FROM information_schema.tables' > tables.json
 ```
+
+### All The Things without prompt access
+
+This explicitly sets every command line option available and uses password stored in variable `$MYSQL_PASSWORD`.
+
+```
+$> echo $MYSQL_PASSWORD | mysql-to-json -h mydbserver.myhost.com -P 3306 -d mysql -u seth -p -e 'SELECT * FROM information_schema.tables' > tables.json
+```
